@@ -9,19 +9,24 @@ class Bank
   def initialize(money=0, name="Makers Academy Building Society")
     @money = money
     @name = name
-    @accounts = []
+    #@accounts = []
   end
 
-  def open_bank_account(account)
-    @accounts << account
-  end
-
-  def close_bank_account(account)
-    true
-  end
+  #def open_bank_account(account)
+  #  @accounts << account
+  #end
 
   def empty!
     @money = 0
   end
+
+  def bank_balance
+    @money
+  end
+
+  def register_customer(customers)
+    true
+  end
+
 
 end
