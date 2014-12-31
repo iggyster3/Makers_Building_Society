@@ -21,6 +21,11 @@ describe Bank do
       it 'registration with a customer' do
         expect(bank.register_customer(customer)).to be true
       end
+
+      it 'checks whether bank is suitable for customer' do
+        bank.register_customer(customer)
+        expect(bank.is_customer_suitable?).to be true
+      end
   end
   end
 

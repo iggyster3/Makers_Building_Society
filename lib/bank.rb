@@ -28,5 +28,8 @@ class Bank
     true
   end
 
+  def is_customer_suitable?
+    true
+  end
 
 end
