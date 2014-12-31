@@ -4,14 +4,16 @@ class Bank
 
   include BankContainer
 
-  attr_accessor :money
+  attr_accessor :money, :name
 
-  def initialize(money=nil)
+  def initialize(money=0, name="Makers Academy Building Society")
     @money = money
+    @name = name
+    @accounts = []
   end
 
   def open_bank_account(account)
-    true
+    @accounts << account
   end
 
   def close_bank_account(account)

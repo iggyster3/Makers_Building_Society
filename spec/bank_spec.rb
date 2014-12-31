@@ -1,17 +1,20 @@
 require 'bank'
+require 'Account'
 
 describe Bank do
 
   let(:bank){Bank.new(100)}
+  let(:account){Account.new}
+
 
   context 'Makers Acacdemy Bank' do
 
     it 'can open an account' do
-      expect(bank.open_bank_account(Account.new)).to eq(true)
+      expect(bank.open_bank_account(:account)).to eq(true)
     end
 
     it 'can close an account' do
-      expect(bank.close_bank_account(Account.new)).to eq(true)
+      expect(bank.close_bank_account(:account)).to eq(true)
     end
   end
 

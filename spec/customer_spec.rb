@@ -14,5 +14,5 @@ describe Customer do
       expect(customer.deposit).to eq(true)
     end
   end
-  
+
 end
