@@ -1,2 +1,2 @@
-module BankContainerxs
+module BankContainer
 end

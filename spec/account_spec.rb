@@ -6,7 +6,8 @@ describe BankAccount do
 
     let(:bankaccount){BankAccount.new}
 
-    it 'bank has money' do
+    it 'bank account should have a type' do
+      expect(bankaccount.name).to eq('Current Account')
     end
 
 
