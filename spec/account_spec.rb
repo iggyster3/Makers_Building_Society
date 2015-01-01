@@ -10,6 +10,10 @@ describe BankAccount do
       expect(bankaccount.name).to eq('Current Account')
     end
 
+    it 'should have an bank account balance of 0' do
+      expect(bankaccount.balance).to eq (0)
+    end
+
 
   end
 
