@@ -1,5 +1,2 @@
-module BankContainer
-
-  
-
+module BankContainerxs
 end

@@ -1,2 +1,2 @@
-class Account
+class BankAccount
 end
